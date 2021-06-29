@@ -1,0 +1,50 @@
+name: Seats
+version: 1.1
+main: me.avixk.Seats.Main
+api-version: 1.16
+description: Sit on things
+authors: [avixk]
+commands:
+  sit:
+    description: Sit down
+    permission: seats.sit
+    usage: '§cUsage: /sit'
+  ride:
+    description: Right click to ride anything
+    permission: seats.ride
+    usage: '§cUsage: /ride'
+  wear:
+    description: Right click to put entities on your head
+    permission: seats.wear
+    usage: '§cUsage: /wear'
+  eject:
+    description: Eject entities from yourself
+    permission: seats.eject
+    usage: '§cUsage: /eject [§lall§c | vehicle | passenger]'
+  ejectother:
+    description: Eject entities from other entities
+    permission: seats.ejectother
+    usage: '§cUsage: /ejectother [§lall§c | vehicle | passenger]'
+  stack:
+    description: Stack entities
+    permission: seats.stack
+    usage: '§cUsage: /stack'
+  crawl:
+    description: Crawl!
+    permission: seats.crawl
+    usage: '§cUsage: /crawl'
+permissions:
+  seats.sit:
+    default: not op
+  seats.crawl:
+    default: not op
+  seats.ride:
+    default: op
+  seats.wear:
+    default: op
+  seats.eject:
+    default: op
+  seats.ejectother:
+    default: op
+  seats.stack:
+    default: op
